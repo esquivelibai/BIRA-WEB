@@ -184,7 +184,7 @@
     var total = slides.length;
     var index = 0;
     var timer = null;
-    var DELAY = 5000;
+    var DELAY = 6500;
 
     var dots = [];
     for (var i = 0; i < total; i++) {
