@@ -894,7 +894,8 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   border-radius: 0.8rem;
   overflow: hidden;
   cursor: pointer;
-  transition: flex 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: flex-grow 1.15s cubic-bezier(0.45, 0, 0.15, 1);
+  will-change: flex-grow;
 }
 .imgallery__item img {
   width: 100%;
@@ -903,7 +904,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   object-position: center;
   display: block;
 }
-.imgallery__item:hover { flex: 5 1 0; }
+.imgallery__item:hover { flex-grow: 4.5; }
 .imgallery__cap {
   position: absolute;
   left: 0;
@@ -925,6 +926,16 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   .imgallery__item:hover { flex: none; }
   .imgallery__cap { opacity: 1; }
 }
+
+/* ---------- Logo origin strip (marka) ---------- */
+.logo-origin {
+  margin: 0 0 2.6rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+}
+.logo-origin img { width: 100%; height: auto; display: block; }
 
 /* ============================================================
    GALLERY 6 / GARAPENA
@@ -1105,26 +1116,41 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
 .phase h3 { font-size: 1.12rem; font-weight: 700; }
 .phase p { font-size: 0.9rem; color: var(--ink-soft); margin-top: 0.5rem; }
 .phase__dc { margin-top: 1rem; display: grid; gap: 0.55rem; }
-.phase__dc-row {
-  display: flex;
-  gap: 0.55rem;
-  align-items: baseline;
+.phase__dc-box {
   margin-top: 0 !important;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  background: transparent;
+  transition: background 0.45s var(--ease), color 0.45s var(--ease), border-color 0.45s var(--ease), box-shadow 0.45s var(--ease);
+}
+.phase__dc-box p {
+  margin: 0 !important;
   font-size: 0.85rem;
   line-height: 1.4;
+  color: var(--ink-soft);
+  transition: color 0.45s var(--ease);
 }
-.phase__dc-tag {
-  flex: none;
-  font-size: 0.62rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 0.18rem 0.55rem;
-  border-radius: 999px;
-  transform: translateY(-1px);
+/* El recuadro resaltado empieza en "divergir" (arriba) */
+.phase__dc-box--div {
+  background: var(--cherry);
+  border-color: var(--cherry);
+  box-shadow: 0 12px 24px -14px rgba(91, 30, 37, 0.6);
 }
-.phase__dc-tag--div { background: rgba(91, 30, 37, 0.1); color: var(--cherry); }
-.phase__dc-tag--con { background: var(--cherry); color: var(--paper); }
+.phase__dc-box--div p { color: var(--paper); }
+/* Al pasar el cursor por "converger" (abajo), el resaltado baja */
+.phase__dc:has(.phase__dc-box--con:hover) .phase__dc-box--div {
+  background: transparent;
+  border-color: var(--line);
+  box-shadow: none;
+}
+.phase__dc:has(.phase__dc-box--con:hover) .phase__dc-box--div p { color: var(--ink-soft); }
+.phase__dc:has(.phase__dc-box--con:hover) .phase__dc-box--con {
+  background: var(--cherry);
+  border-color: var(--cherry);
+  box-shadow: 0 12px 24px -14px rgba(91, 30, 37, 0.6);
+}
+.phase__dc:has(.phase__dc-box--con:hover) .phase__dc-box--con p { color: var(--paper); }
 
 /* ============================================================
    STATS / COUNTERS
