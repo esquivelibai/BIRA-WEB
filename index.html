@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIRA · Real Food Endurance — PBL06 · Mondragon Unibertsitatea</title>
+  <meta name="description" content="BIRA: udako euskal uztari irteera ematen dion energia-barra naturala. Gerezi birbalorizatua eta landare-proteina. PBL06 · Ereindajan erronka · Mondragon Unibertsitatea." />
+
+  <meta property="og:title" content="BIRA · Real Food Endurance" />
+  <meta property="og:description" content="Elikagai errealak. Iraunkortasun erreala. Udako gerezi soberakinetik sortua." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="bira-mark" viewBox="0 0 100 120">
+        <path fill="none" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"
+          d="M55 30 C75 26 80 50 62 56 C52 59 49 47 58 43 C40 44 22 64 22 84 C22 104 40 116 58 112 C78 108 88 88 76 70 C69 60 62 57 58 56" />
+      </symbol>
+    </defs>
+  </svg>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="BIRA">
+        <svg class="logo__mark" viewBox="0 0 100 120" aria-hidden="true"><use href="#bira-mark" /></svg>
+        <span class="logo__type">
+          <span class="logo__word">BIRA</span>
+          <span class="logo__sub">Benetako elikadura iraunkorra</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__links">
+          <li><a href="#erronka"   data-eu="Erronka"   data-es="Reto">Erronka</a></li>
+          <li><a href="#prozesua"  data-eu="Prozesua"  data-es="Proceso">Prozesua</a></li>
+          <li><a href="#datuak"    data-eu="Datuak"    data-es="Datos">Datuak</a></li>
+          <li><a href="#produktua" data-eu="Produktua" data-es="Producto">Produktua</a></li>
+          <li><a href="#marka"     data-eu="Marka"     data-es="Marca">Marka</a></li>
+          <li><a href="#taldea"    data-eu="Taldea"    data-es="Equipo">Taldea</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__cta">
+        <div class="lang" role="group" aria-label="Hizkuntza / Idioma">
+          <button type="button" data-lang="eu" class="is-active">EU</button>
+          <button type="button" data-lang="es">ES</button>
+        </div>
+        <a href="#produktua" class="btn btn--primary" data-eu="Produktua ikusi" data-es="Ver producto">Produktua ikusi</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menua" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__bg"><svg class="hero__watermark" viewBox="0 0 100 120" aria-hidden="true"><use href="#bira-mark" /></svg></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow reveal" data-eu="PBL06 · Ereindajan erronka" data-es="PBL06 · Reto Ereindajan">PBL06 · Ereindajan erronka</span>
+          <h1 class="hero__title reveal" data-delay="1">
+            <span data-eu="Zurekin batera mugitzen den " data-es="La nutrición que se mueve ">Zurekin batera mugitzen den </span><span class="serif" data-eu="nutrizioa" data-es="contigo">nutrizioa</span>.
+          </h1>
+          <p class="hero__lead reveal" data-delay="2"
+             data-eu="Udako euskal uztari irteera ematen dion energia-barra naturala. Gerezi birbalorizatua eta landare-proteina, gehigarri artifizialik gabe."
+             data-es="La barra energética natural que da salida a la cosecha vasca de verano. Cereza revalorizada y proteína vegetal, sin aditivos artificiales.">
+            Udako euskal uztari irteera ematen dion energia-barra naturala. Gerezi birbalorizatua eta landare-proteina, gehigarri artifizialik gabe.
+          </p>
+
+          <div class="hero__actions reveal" data-delay="3">
+            <a href="#erronka" class="btn btn--primary">
+              <span data-eu="Proiektua ezagutu" data-es="Conoce el proyecto">Proiektua ezagutu</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#produktua" class="btn btn--ghost" data-eu="Produktua" data-es="El producto">Produktua</a>
+          </div>
+
+          <div class="hero__badges reveal" data-delay="4">
+            <span class="hero__badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span data-eu="Azukre gehigarririk ez" data-es="Sin azúcar añadido">Azukre gehigarririk ez</span></span>
+            <span class="hero__badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span data-eu="Landare-proteina" data-es="Proteína vegetal">Landare-proteina</span></span>
+            <span class="hero__badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span data-eu="Tokiko fruta" data-es="Fruta local">Tokiko fruta</span></span>
+            <span class="hero__badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 40 g</span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="2">
+          <div class="hero__disc" aria-hidden="true"></div>
+          <img id="heroBar" class="hero__product" src="assets/bar-front.png" alt="BIRA · Barra energética de cereza" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VALUES MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee">
+        <span>Naturala</span><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="currentColor"/></svg>
+        <span>Iraunkorra</span><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="currentColor"/></svg>
+        <span>Erritmoa</span><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="currentColor"/></svg>
+        <span>Oreka</span><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="currentColor"/></svg>
+        <span>Funtzionala</span><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="currentColor"/></svg>
+        <span>Benetakoa</span><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="currentColor"/></svg>
+        <span>Tokikoa</span><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="currentColor"/></svg>
+        <span>Zirkularra</span><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- ===================== CHALLENGE ===================== -->
+    <section class="section challenge" id="erronka">
+      <div class="container split">
+        <div class="split__text">
+          <span class="eyebrow reveal" data-eu="Erronka · Ereindajan" data-es="El reto · Ereindajan">Erronka · Ereindajan</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Udako soberakina, alferrik galtzen dena."
+              data-es="El excedente de verano que se desperdicia.">
+            Udako soberakina, alferrik galtzen dena.
+          </h2>
+          <p class="challenge__quote reveal" data-delay="2"
+             data-eu="«Nola emango diogu irteera udako euskal uztari?»"
+             data-es="«¿Cómo damos salida a la cosecha vasca de verano?»">
+            «Nola emango diogu irteera udako euskal uztari?»
+          </p>
+          <p class="section__lead reveal" data-delay="2"
+             data-eu="Udan (ekainetik abuztura) Debagoieneko tokiko fruta eta barazkien ekoizpena gailurrera iristen da, baina eskaria jaitsi egiten da. Horrek gehiegizko ekoizpena, balio-galera eta elikagai-xahutzea sortzen ditu. Ereindajan Debagoieneko egitasmo agroekologikoak erronka hau planteatu zuen."
+             data-es="En verano (de junio a agosto) la producción local de fruta y verdura de Debagoiena alcanza su pico, pero la demanda cae. Esto genera sobreproducción, pérdida de valor y desperdicio alimentario. El proyecto agroecológico Ereindajan, de Debagoiena, planteó este reto.">
+            Udan (ekainetik abuztura) Debagoieneko tokiko fruta eta barazkien ekoizpena gailurrera iristen da, baina eskaria jaitsi egiten da. Horrek gehiegizko ekoizpena, balio-galera eta elikagai-xahutzea sortzen ditu. Ereindajan Debagoieneko egitasmo agroekologikoak erronka hau planteatu zuen.
+          </p>
+          <div class="pills reveal" data-delay="3">
+            <span class="pill" data-eu="Gehiegizko ekoizpena" data-es="Sobreproducción">Gehiegizko ekoizpena</span>
+            <span class="pill" data-eu="Urtaroko eskari txikia" data-es="Menor demanda estacional">Urtaroko eskari txikia</span>
+            <span class="pill" data-eu="Galtzeko arriskua" data-es="Riesgo de desperdicio">Galtzeko arriskua</span>
+          </div>
+        </div>
+        <figure class="split__media figure reveal" data-delay="2">
+          <img src="assets/mood.jpg" alt="BIRA · giro eta estetika" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== METHODOLOGY ===================== -->
+    <section class="section" id="prozesua">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-eu="Prozesua" data-es="Proceso">Prozesua</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Dibergentzia eta konbergentzia, lau fasetan."
+              data-es="Divergencia y convergencia, en cuatro fases.">
+            Dibergentzia eta konbergentzia, lau fasetan.
+          </h2>
+          <p class="section__lead reveal" data-delay="2"
+             data-eu="Diseinu-pentsamenduan oinarritutako metodologiarekin, arazotik soluziora."
+             data-es="Metodología basada en design thinking, del problema a la solución.">
+            Diseinu-pentsamenduan oinarritutako metodologiarekin, arazotik soluziora.
+          </p>
+        </div>
+
+        <div class="phases">
+          <article class="phase reveal" data-delay="1">
+            <div class="phase__step">01</div><div class="phase__bar"></div>
+            <h3 data-eu="Bilaketa estrategikoa" data-es="Búsqueda estratégica">Bilaketa estrategikoa</h3>
+            <p data-eu="Elikagai-xahutzearen testuingurua eta udako kontsumo-joerak. Frutaren aukeraketa: gerezia."
+               data-es="Contexto del desperdicio alimentario y tendencias de consumo de verano. Elección de la fruta: la cereza.">
+              Elikagai-xahutzearen testuingurua eta udako kontsumo-joerak. Frutaren aukeraketa: gerezia.
+            </p>
+          </article>
+          <article class="phase reveal" data-delay="2">
+            <div class="phase__step">02</div><div class="phase__bar"></div>
+            <h3 data-eu="Analisia" data-es="Análisis">Analisia</h3>
+            <p data-eu="Merkatua, lehiakideak eta erabiltzaileak: inkesta (n=90), elkarrizketak eta pertsonak."
+               data-es="Mercado, competidores y usuarios: encuesta (n=90), entrevistas y personas.">
+              Merkatua, lehiakideak eta erabiltzaileak: inkesta (n=90), elkarrizketak eta pertsonak.
+            </p>
+          </article>
+          <article class="phase reveal" data-delay="3">
+            <div class="phase__step">03</div><div class="phase__bar"></div>
+            <h3 data-eu="Ideazioa" data-es="Ideación">Ideazioa</h3>
+            <p data-eu="Produktu-kontzeptua, marka eta diseinua: BIRA eta «Real Food Endurance» kokapena."
+               data-es="Concepto de producto, marca y diseño: BIRA y el posicionamiento «Real Food Endurance».">
+              Produktu-kontzeptua, marka eta diseinua: BIRA eta «Real Food Endurance» kokapena.
+            </p>
+          </article>
+          <article class="phase reveal" data-delay="4">
+            <div class="phase__step">04</div><div class="phase__bar"></div>
+            <h3 data-eu="Garapena" data-es="Desarrollo">Garapena</h3>
+            <p data-eu="Fabrikazioa, ontziratze funtzionala, etiketak eta lege-alderdiak. Merkaturatze-estrategia."
+               data-es="Fabricación, envase funcional, etiquetas y aspectos legales. Estrategia de comercialización.">
+              Fabrikazioa, ontziratze funtzionala, etiketak eta lege-alderdiak. Merkaturatze-estrategia.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="section stats" id="datuak">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-eu="Erabiltzaile-ikerketa" data-es="Investigación de usuario">Erabiltzaile-ikerketa</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Datuek erabilera-testuingurua baieztatzen dute."
+              data-es="Los datos validan el contexto de uso.">
+            Datuek erabilera-testuingurua baieztatzen dute.
+          </h2>
+        </div>
+
+        <div class="stats__grid">
+          <div class="stat reveal" data-delay="1">
+            <div class="stat__num" data-count="91" data-suffix="%">0%</div>
+            <p class="stat__label" data-eu="astean gutxienez 2 aldiz kirola egiten du" data-es="practica deporte al menos 2 veces/semana">astean gutxienez 2 aldiz kirola egiten du</p>
+          </div>
+          <div class="stat reveal" data-delay="2">
+            <div class="stat__num" data-count="83" data-suffix="%">0%</div>
+            <p class="stat__label" data-eu="ordubete baino gehiagoko saioak egiten ditu" data-es="realiza sesiones de más de una hora">ordubete baino gehiagoko saioak egiten ditu</p>
+          </div>
+          <div class="stat reveal" data-delay="3">
+            <div class="stat__num" data-count="61" data-suffix="%">0%</div>
+            <p class="stat__label" data-eu="energiagatik kontsumitzen du, ez lehiagatik" data-es="consume por energía, no por competición">energiagatik kontsumitzen du, ez lehiagatik</p>
+          </div>
+          <div class="stat reveal" data-delay="4">
+            <div class="stat__num" data-count="90" data-prefix="n=">n=0</div>
+            <p class="stat__label" data-eu="inkestako parte-hartzaile" data-es="participantes en la encuesta">inkestako parte-hartzaile</p>
+          </div>
+        </div>
+        <p class="stats__note reveal"
+           data-eu="Iturria: PBL06 proiektuko inkesta propioa (n=90). «Naturala eta kontserbatzailerik gabea» izan zen baloratuena (3,95/5)."
+           data-es="Fuente: encuesta propia del proyecto PBL06 (n=90). «Natural y sin conservantes» fue el atributo mejor valorado (3,95/5).">
+          Iturria: PBL06 proiektuko inkesta propioa (n=90). «Naturala eta kontserbatzailerik gabea» izan zen baloratuena (3,95/5).
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== PERSONA ===================== -->
+    <section class="section">
+      <div class="container split">
+        <figure class="split__media figure reveal">
+          <img src="assets/personas.jpg" alt="Buyer persona · Irati" loading="lazy" />
+        </figure>
+        <div class="split__text">
+          <span class="eyebrow reveal" data-eu="Pertsonak" data-es="Personas">Pertsonak</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Irati: txirrindulari amateur eta kontzientea."
+              data-es="Irati: ciclista amateur y consciente.">
+            Irati: txirrindulari amateur eta kontzientea.
+          </h2>
+          <p class="section__lead reveal" data-delay="2"
+             data-eu="29 urte. Energia mantentzeko fruituetan oinarritutako produktu naturalak nahiago ditu, suplementu prozesatuak baino. Kirol-errendimendua eta osasuna uztartzen ditu, errazkeria funtzionalik gabe."
+             data-es="29 años. Para mantener la energía prefiere productos naturales a base de fruta antes que suplementos procesados. Combina rendimiento y salud, sin atajos funcionales.">
+            29 urte. Energia mantentzeko fruituetan oinarritutako produktu naturalak nahiago ditu, suplementu prozesatuak baino. Kirol-errendimendua eta osasuna uztartzen ditu, errazkeria funtzionalik gabe.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POSITIONING ===================== -->
+    <section class="section challenge">
+      <div class="container split split--rev">
+        <figure class="split__media figure reveal">
+          <img src="assets/positioning.jpg" alt="Mapa de posicionamiento · BIRA" loading="lazy" />
+        </figure>
+        <div class="split__text">
+          <span class="eyebrow reveal" data-eu="Merkatu-analisia" data-es="Análisis de mercado">Merkatu-analisia</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Naturaltasunaren eta funtzionaltasunaren artean."
+              data-es="Entre la naturalidad y la funcionalidad.">
+            Naturaltasunaren eta funtzionaltasunaren artean.
+          </h2>
+          <p class="section__lead reveal" data-delay="2"
+             data-eu="BIRA kirol-nutrizio prozesatuaren eta snack osasuntsuaren arteko hutsunean kokatzen da: errendimendu naturala, benetako elikadurarekin. Lehiakide gehienek prozesatua edo errendimendu hutsa eskaintzen dute; BIRAk biak batzen ditu."
+             data-es="BIRA se posiciona en el hueco entre la nutrición deportiva procesada y el snack saludable: rendimiento natural con alimentación real. La mayoría de competidores ofrecen procesado o solo rendimiento; BIRA une ambos.">
+            BIRA kirol-nutrizio prozesatuaren eta snack osasuntsuaren arteko hutsunean kokatzen da: errendimendu naturala, benetako elikadurarekin. Lehiakide gehienek prozesatua edo errendimendu hutsa eskaintzen dute; BIRAk biak batzen ditu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCT / INGREDIENTS ===================== -->
+    <section class="section" id="produktua">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-eu="Produktua" data-es="El producto">Produktua</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Lau geruza. Energia bakarra."
+              data-es="Cuatro capas. Una sola energía.">
+            Lau geruza. Energia bakarra.
+          </h2>
+          <p class="section__lead reveal" data-delay="2"
+             data-eu="Gerezi birbalorizatuan eta lekale-proteinan (garbantzua eta dilista gorria) oinarritua. 40 g energia egonkorra, digestio erraza eta benetako zaporea."
+             data-es="A base de cereza revalorizada y proteína de legumbre (garbanzo y lenteja roja). 40 g de energía estable, digestión fácil y sabor real.">
+            Gerezi birbalorizatuan eta lekale-proteinan (garbantzua eta dilista gorria) oinarritua. 40 g energia egonkorra, digestio erraza eta benetako zaporea.
+          </p>
+        </div>
+
+        <div class="layers__grid" style="margin-top:3.4rem">
+          <article class="layer reveal" data-delay="1" style="--bar-color:#3a2a1f">
+            <div class="layer__num">01</div>
+            <h3 data-eu="Txokolate beltza" data-es="Chocolate negro">Txokolate beltza</h3>
+            <p data-eu="%85 kakao, geruza fina eta intentsoa amaiera dotorerako." data-es="85% cacao, capa fina e intensa para un acabado elegante.">%85 kakao, geruza fina eta intentsoa amaiera dotorerako.</p>
+          </article>
+          <article class="layer reveal" data-delay="2" style="--bar-color:#8B867D">
+            <div class="layer__num">02</div>
+            <h3 data-eu="Fruitu lehorrak" data-es="Frutos secos">Fruitu lehorrak</h3>
+            <p data-eu="Hur txigortuak — zati kurruskari eta gantz onak." data-es="Avellanas tostadas — trozos crujientes y grasas buenas.">Hur txigortuak — zati kurruskari eta gantz onak.</p>
+          </article>
+          <article class="layer reveal" data-delay="3" style="--bar-color:#5B1E25">
+            <div class="layer__num">03</div>
+            <h3 data-eu="Gerezi pasta" data-es="Pasta de cereza">Gerezi pasta</h3>
+            <p data-eu="Gerezi birbalorizatua, deshidratatua eta trituratua. Zapore erreala." data-es="Cereza revalorizada, deshidratada y triturada. Sabor real.">Gerezi birbalorizatua, deshidratatua eta trituratua. Zapore erreala.</p>
+          </article>
+          <article class="layer reveal" data-delay="4" style="--bar-color:#6F7A5C">
+            <div class="layer__num">04</div>
+            <h3 data-eu="Oinarri estrukturala" data-es="Base estructural">Oinarri estrukturala</h3>
+            <p data-eu="Olo integrala + landare-proteina (garbantzua eta dilista gorria)." data-es="Avena integral + proteína vegetal (garbanzo y lenteja roja).">Olo integrala + landare-proteina (garbantzua eta dilista gorria).</p>
+          </article>
+        </div>
+
+        <div class="split" style="margin-top:3.4rem">
+          <figure class="split__media figure reveal">
+            <img src="assets/bar-energy.png" alt="BIRA · real food, real energy" loading="lazy"
+                 onerror="this.onerror=null;this.src='assets/ingredients.jpg'" />
+          </figure>
+          <div class="split__text">
+            <h3 class="section__title reveal" style="font-size:clamp(1.6rem,3vw,2.3rem)"
+                data-eu="Osagai errealak, ezer alferrik gabe." data-es="Ingredientes reales, sin nada de más.">
+              Osagai errealak, ezer alferrik gabe.
+            </h3>
+            <div class="chips reveal" data-delay="1" style="margin-top:1.6rem">
+              <span class="chip" data-eu="Gereziak" data-es="Cereza">Gereziak</span>
+              <span class="chip" data-eu="Olo integrala" data-es="Avena integral">Olo integrala</span>
+              <span class="chip" data-eu="Landare-proteina" data-es="Proteína vegetal">Landare-proteina</span>
+              <span class="chip" data-eu="Hurrak" data-es="Avellana">Hurrak</span>
+              <span class="chip" data-eu="Txokolate beltza %85" data-es="Chocolate negro 85%">Txokolate beltza %85</span>
+            </div>
+            <div class="chips reveal" data-delay="2" style="margin-top:0.8rem">
+              <span class="chip" data-eu="Azukre gehigarririk ez" data-es="Sin azúcar añadido">Azukre gehigarririk ez</span>
+              <span class="chip" data-eu="Beganoa" data-es="Vegano">Beganoa</span>
+              <span class="chip">40 g</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FLAVORS ===================== -->
+    <section class="section flavors" id="aldaerak">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-eu="Aldaerak" data-es="Variantes">Aldaerak</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Sistema bakarra. Mugimendu oro."
+              data-es="Un solo sistema. Todo movimiento.">
+            Sistema bakarra. Mugimendu oro.
+          </h2>
+          <p class="section__lead reveal" data-delay="2"
+             data-eu="Egitura bera, kode kromatiko bakarra. Beti energia errealarekin."
+             data-es="La misma estructura, un único código cromático. Siempre con energía real.">
+            Egitura bera, kode kromatiko bakarra. Beti energia errealarekin.
+          </p>
+        </div>
+
+        <div class="flavors__grid">
+          <article class="flavor reveal" data-delay="1" style="--flavor:#5B1E25">
+            <svg class="flavor__mark" viewBox="0 0 100 120"><use href="#bira-mark" /></svg>
+            <div class="flavor__name">Cherry<span>Bar</span></div>
+            <div class="flavor__foot"><span>Natural Energy</span><span>40g</span></div>
+          </article>
+          <article class="flavor reveal" data-delay="2" style="--flavor:#3a2a24">
+            <svg class="flavor__mark" viewBox="0 0 100 120"><use href="#bira-mark" /></svg>
+            <div class="flavor__name">Cacao<span>Bar</span></div>
+            <div class="flavor__foot"><span>Natural Energy</span><span>40g</span></div>
+          </article>
+          <article class="flavor reveal" data-delay="3" style="--flavor:#8B867D">
+            <svg class="flavor__mark" viewBox="0 0 100 120"><use href="#bira-mark" /></svg>
+            <div class="flavor__name">Nuts<span>Bar</span></div>
+            <div class="flavor__foot"><span>Natural Energy</span><span>40g</span></div>
+          </article>
+          <article class="flavor reveal" data-delay="4" style="--flavor:#6F7A5C">
+            <svg class="flavor__mark" viewBox="0 0 100 120"><use href="#bira-mark" /></svg>
+            <div class="flavor__name">Oats<span>Bar</span></div>
+            <div class="flavor__foot"><span>Natural Energy</span><span>40g</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DEVELOPMENT / PACKAGING ===================== -->
+    <section class="section" id="garapena">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-eu="Garapena" data-es="Desarrollo">Garapena</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Ontziratzetik apalategira."
+              data-es="Del envase al lineal.">
+            Ontziratzetik apalategira.
+          </h2>
+          <p class="section__lead reveal" data-delay="2"
+             data-eu="Eskuan eutsi eta mugimenduan jateko diseinatutako ontzi funtzionala, 6 eta 24 unitateko kutxekin eta salmenta-puntuko ikuspegiarekin."
+             data-es="Envase funcional diseñado para sostener en la mano y comer en movimiento, con cajas de 6 y 24 unidades y visión de punto de venta.">
+            Eskuan eutsi eta mugimenduan jateko diseinatutako ontzi funtzionala, 6 eta 24 unitateko kutxekin eta salmenta-puntuko ikuspegiarekin.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure class="g-big reveal">
+            <img src="assets/shelf.jpg" alt="BIRA · apalategian" loading="lazy" />
+            <figcaption data-eu="Salmenta-puntua" data-es="Punto de venta">Salmenta-puntua</figcaption>
+          </figure>
+          <figure class="g-wide reveal" data-delay="1">
+            <img src="assets/factory.jpg" alt="BIRA · ekoizpena" loading="lazy" />
+            <figcaption data-eu="Ekoizpena · labean" data-es="Producción · al horno">Ekoizpena · labean</figcaption>
+          </figure>
+          <figure class="g-tall reveal" data-delay="1">
+            <img src="assets/bar-back.jpg" alt="BIRA · atzeko aldea" loading="lazy" />
+            <figcaption data-eu="Etiketa · atzealdea" data-es="Etiqueta · trasera">Etiketa · atzealdea</figcaption>
+          </figure>
+          <figure class="reveal" data-delay="2">
+            <img src="assets/box.jpg" alt="BIRA · 24 unitateko kutxa" loading="lazy" />
+            <figcaption data-eu="24 unitateko kutxa" data-es="Caja de 24">24 unitateko kutxa</figcaption>
+          </figure>
+          <figure class="g-wide reveal" data-delay="3">
+            <img src="assets/retail.jpg" alt="BIRA · denda ekologikoan" loading="lazy"
+                 onerror="this.closest('figure').remove()" />
+            <figcaption data-eu="Denda ekologikoan" data-es="En tienda ecológica">Denda ekologikoan</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BRANDING ===================== -->
+    <section class="section challenge" id="marka">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow reveal" data-eu="Marka" data-es="Marca">Marka</span>
+          <h2 class="section__title reveal" data-delay="1"
+              data-eu="Eskuz marraztua, naturak inspiratua."
+              data-es="Dibujada a mano, inspirada por la naturaleza.">
+            Eskuz marraztua, naturak inspiratua.
+          </h2>
+          <p class="section__lead reveal" data-delay="2"
+             data-eu="Logoa «B» letraren eta gerezi baten batuketatik sortzen da: forma sinple, organiko eta zintzo bat."
+             data-es="El logo nace de la suma de la letra «B» y una cereza: una forma simple, orgánica y honesta.">
+            Logoa «B» letraren eta gerezi baten batuketatik sortzen da: forma sinple, organiko eta zintzo bat.
+          </p>
+        </div>
+
+        <div class="brandgrid">
+          <div class="brandcard reveal" data-delay="1">
+            <h3 data-eu="Logotipoaren eraikuntza" data-es="Construcción del logo">Logotipoaren eraikuntza</h3>
+            <div class="logo-eq">
+              <span>B</span><span>+</span>
+              <svg viewBox="0 0 60 70" fill="none" aria-hidden="true"><path d="M30 8 C30 22 18 26 16 40" stroke="#6F7A5C" stroke-width="3" stroke-linecap="round"/><circle cx="22" cy="50" r="13" fill="#5B1E25"/></svg>
+              <span>=</span>
+              <svg viewBox="0 0 100 120" style="color:var(--cherry)"><use href="#bira-mark"/></svg>
+            </div>
+          </div>
+          <div class="brandcard reveal" data-delay="2">
+            <h3 data-eu="Kolore paleta" data-es="Paleta de color">Kolore paleta</h3>
+            <div class="swrow">
+              <span class="swatch"><span style="background:#5B1E25"></span><small>Burgundi</small></span>
+              <span class="swatch"><span style="background:#2E2E2E"></span><small>Grafito</small></span>
+              <span class="swatch"><span style="background:#F3EFE6"></span><small>Paper</small></span>
+              <span class="swatch"><span style="background:#8B867D"></span><small>Itzal</small></span>
+              <span class="swatch"><span style="background:#6F7A5C"></span><small>Musgo</small></span>
+            </div>
+          </div>
+          <div class="brandcard reveal" data-delay="3">
+            <h3 data-eu="Balioak" data-es="Valores">Balioak</h3>
+            <ul class="values-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span data-eu="Naturaltasuna" data-es="Naturalidad">Naturaltasuna</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span data-eu="Iraunkortasuna" data-es="Sostenibilidad">Iraunkortasuna</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span data-eu="Hurbiltasuna" data-es="Cercanía">Hurbiltasuna</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span data-eu="Zintzotasuna" data-es="Honestidad">Zintzotasuna</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUOTE BAND ===================== -->
+    <section class="section quote">
+      <svg class="quote__mark" viewBox="0 0 100 120" aria-hidden="true"><use href="#bira-mark" /></svg>
+      <div class="container">
+        <p class="quote__text reveal" data-eu="Ez da helmuga.&#10;Bidea da." data-es="No es la meta.&#10;Es el camino.">Ez da helmuga. Bidea da.</p>
+        <p class="quote__cap reveal" data-delay="1">Real energy belongs to the journey</p>
+      </div>
+    </section>
+
+    <!-- ===================== COVER / CREDITS ===================== -->
+    <section class="section cover" id="taldea">
+      <div class="container">
+        <svg class="cover__mark reveal" viewBox="0 0 100 120" aria-hidden="true"><use href="#bira-mark" /></svg>
+        <p class="cover__uni reveal" data-delay="1">Mondragon Unibertsitatea · Goi Eskola Politeknikoa</p>
+        <p class="cover__deg reveal" data-delay="1"
+           data-eu="Diseinu Industrialeko Ingeniaritza eta Produktu Garapena"
+           data-es="Ingeniería en Diseño Industrial y Desarrollo de Producto">
+          Diseinu Industrialeko Ingeniaritza eta Produktu Garapena
+        </p>
+        <h2 class="cover__title reveal" data-delay="2">BIRA</h2>
+        <p class="cover__sub reveal" data-delay="2"
+           data-eu="Udako euskal uztari irteera ematen dion energia-barra naturala — gerezi birbalorizatuan eta landare-proteinan oinarritutako snack funtzionala."
+           data-es="La barra energética natural que da salida a la cosecha vasca de verano — snack funcional a base de cereza revalorizada y proteína vegetal.">
+          Udako euskal uztari irteera ematen dion energia-barra naturala — gerezi birbalorizatuan eta landare-proteinan oinarritutako snack funtzionala.
+        </p>
+        <div class="cover__meta reveal" data-delay="3">
+          <span><b>PBL06</b> · Ereindajan <span data-eu="erronka" data-es="reto">erronka</span></span>
+          <span data-eu="3. maila · 2. seihilekoa · 2025/2026" data-es="3.er curso · 2.º semestre · 2025/2026">3. maila · 2. seihilekoa · 2025/2026</span>
+          <span><b>4. Taldea</b></span>
+          <span data-eu="Tutorea: Haizea" data-es="Tutora: Haizea">Tutorea: Haizea</span>
+          <span>Arrasate-Mondragón, 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA / NEWSLETTER ===================== -->
+    <section class="section" id="kontaktua">
+      <div class="container">
+        <div class="cta__box reveal">
+          <span class="eyebrow" style="display:block;text-align:center" data-eu="Mugimenduarekin bat egin" data-es="Únete al movimiento">Mugimenduarekin bat egin</span>
+          <h2 class="cta__title" style="margin-top:1rem" data-eu="Jaso BIRA-ren berri." data-es="Recibe las novedades de BIRA.">Jaso BIRA-ren berri.</h2>
+          <p class="section__lead" style="margin:1rem auto 0"
+             data-eu="Lehenengoen artean egon kaleratzeez eta sasoiko aldaeraz jakiteko."
+             data-es="Sé de los primeros en conocer lanzamientos y variantes de temporada.">
+            Lehenengoen artean egon kaleratzeez eta sasoiko aldaeraz jakiteko.
+          </p>
+          <form class="cta__form" id="newsletter" novalidate>
+            <input type="email" name="email" placeholder="zure@emaila.eus" data-eu-ph="zure@emaila.eus" data-es-ph="tu@email.com" aria-label="Email" required />
+            <button type="submit" class="btn btn--primary" data-eu="Izena eman" data-es="Suscribirme">Izena eman</button>
+          </form>
+          <p class="cta__note" id="formNote" data-eu="Inoiz ez dugu spamik bidaliko. Eman. Hartu. Jarraitu." data-es="Nunca enviaremos spam. Da. Recibe. Continúa.">Inoiz ez dugu spamik bidaliko. Eman. Hartu. Jarraitu.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a class="logo" href="#top">
+            <svg class="logo__mark" viewBox="0 0 100 120" aria-hidden="true"><use href="#bira-mark" /></svg>
+            <span class="logo__type"><span class="logo__word">BIRA</span></span>
+          </a>
+          <p class="footer__tag">Made to endure · Made to flow</p>
+          <p class="footer__about"
+             data-eu="Udako fruta soberakina birbaloratuz, zure eguneroko mugimendurako energia naturala sortzen dugu."
+             data-es="Revalorizando el excedente de fruta de verano, creamos energía natural para tu movimiento diario.">
+            Udako fruta soberakina birbaloratuz, zure eguneroko mugimendurako energia naturala sortzen dugu.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4 data-eu="Proiektua" data-es="Proyecto">Proiektua</h4>
+          <a href="#erronka" data-eu="Erronka" data-es="Reto">Erronka</a>
+          <a href="#prozesua" data-eu="Prozesua" data-es="Proceso">Prozesua</a>
+          <a href="#datuak" data-eu="Datuak" data-es="Datos">Datuak</a>
+        </div>
+        <div class="footer__col">
+          <h4 data-eu="Produktua" data-es="Producto">Produktua</h4>
+          <a href="#produktua" data-eu="Osagaiak" data-es="Ingredientes">Osagaiak</a>
+          <a href="#aldaerak" data-eu="Aldaerak" data-es="Variantes">Aldaerak</a>
+          <a href="#marka" data-eu="Marka" data-es="Marca">Marka</a>
+        </div>
+        <div class="footer__col">
+          <h4 data-eu="Lotura" data-es="Enlace">Lotura</h4>
+          <a href="https://www.birakorrituk.eus" target="_blank" rel="noopener">birakorrituk.eus</a>
+          <a href="#taldea" data-eu="Taldea" data-es="Equipo">Taldea</a>
+          <a href="#kontaktua" data-eu="Kontaktua" data-es="Contacto">Kontaktua</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> BIRA · Benetako elikadura iraunkorra</span>
+        <span class="footer__credit"><b>PBL06</b> · Mondragon Unibertsitatea · 4. Taldea</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
