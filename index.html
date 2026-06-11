@@ -143,9 +143,67 @@
             <span class="pill" data-eu="Galtzeko arriskua" data-es="Riesgo de desperdicio">Galtzeko arriskua</span>
           </div>
         </div>
-        <figure class="split__media figure reveal" data-delay="2">
-          <img src="assets/mood.jpg" alt="BIRA · giro eta estetika" loading="lazy" />
-        </figure>
+        <div class="carousel reveal" data-delay="2" id="erronkaCarousel" aria-roledescription="carousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+
+              <figure class="carousel__slide">
+                <img src="assets/erronka-zuhaitza.jpg" alt="Gereziondoa gerezi helduz beteta, baserria atzealdean" loading="lazy"
+                     onerror="this.onerror=null;this.src='assets/mood.jpg'" />
+                <figcaption class="carousel__cap">
+                  <span class="carousel__step">01</span>
+                  <span data-eu="Udako uzta gailurrean: gerezi eta tokiko fruta oparoa Debagoienean."
+                        data-es="La cosecha de verano en su pico: cerezas y fruta local en abundancia en Debagoiena.">Udako uzta gailurrean: gerezi eta tokiko fruta oparoa Debagoienean.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="carousel__slide">
+                <img src="assets/erronka-lurrean.jpg" alt="Gereziak lurrera eroriak, usteltzen hasita" loading="lazy"
+                     onerror="this.onerror=null;this.src='assets/ingredients.jpg'" />
+                <figcaption class="carousel__cap">
+                  <span class="carousel__step">02</span>
+                  <span data-eu="Eskaria jaisten denean, fruta lurrera erortzen da eta alferrik galtzen."
+                        data-es="Cuando la demanda cae, la fruta acaba en el suelo y se desperdicia.">Eskaria jaisten denean, fruta lurrera erortzen da eta alferrik galtzen.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="carousel__slide">
+                <img src="assets/erronka-azoka.jpg" alt="Gerezi kutxak azokan, saldu gabe" loading="lazy"
+                     onerror="this.onerror=null;this.src='assets/shelf.jpg'" />
+                <figcaption class="carousel__cap">
+                  <span class="carousel__step">03</span>
+                  <span data-eu="Gehiegizko ekoizpena: saldu gabeko kutxak metatzen dira azokan."
+                        data-es="Sobreproducción: las cajas sin vender se acumulan en el mercado.">Gehiegizko ekoizpena: saldu gabeko kutxak metatzen dira azokan.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="carousel__slide">
+                <img src="assets/erronka-harana.jpg" alt="Debagoieneko harana, baserriak eta soroak" loading="lazy"
+                     onerror="this.onerror=null;this.src='assets/factory.jpg'" />
+                <figcaption class="carousel__cap">
+                  <span class="carousel__step">04</span>
+                  <span data-eu="Debagoiena: lurralde agroekologiko aberatsa, baina uzta egonkortu beharra."
+                        data-es="Debagoiena: un territorio agroecológico rico, pero con una cosecha que hay que estabilizar.">Debagoiena: lurralde agroekologiko aberatsa, baina uzta egonkortu beharra.</span>
+                </figcaption>
+              </figure>
+
+              <figure class="carousel__slide carousel__slide--logo">
+                <img src="assets/ereindajan-logo.png" alt="EREINDAJAN · Debagoieneko egitasmo agroekologikoa" loading="lazy"
+                     onerror="this.onerror=null;this.src='assets/poster.jpg'" />
+                <figcaption class="carousel__cap carousel__cap--light">
+                  <span class="carousel__step">05</span>
+                  <span data-eu="Erronka honen sortzailea: EREINDAJAN, Debagoieneko egitasmo agroekologikoa."
+                        data-es="Quien plantea este reto: EREINDAJAN, el proyecto agroecológico de Debagoiena.">Erronka honen sortzailea: EREINDAJAN, Debagoieneko egitasmo agroekologikoa.</span>
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+
+          <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Aurrekoa / Anterior">&#8249;</button>
+          <button class="carousel__nav carousel__nav--next" type="button" aria-label="Hurrengoa / Siguiente">&#8250;</button>
+          <div class="carousel__dots" role="tablist" aria-label="Diapositivak"></div>
+        </div>
       </div>
     </section>
 
