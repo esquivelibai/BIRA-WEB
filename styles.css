@@ -1451,6 +1451,26 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   padding: 0.5rem 0;
 }
 .logo-eq svg { width: 38px; }
+.typeface { display: grid; gap: 1.2rem; }
+.typeface__row { display: flex; align-items: center; gap: 1rem; }
+.typeface__sample {
+  flex: none;
+  width: 3.4rem;
+  height: 3.4rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--cherry);
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  border-radius: 0.7rem;
+  line-height: 1;
+}
+.typeface__sample.serif { font-weight: 400; }
+.typeface__info { display: flex; flex-direction: column; line-height: 1.2; }
+.typeface__info strong { font-size: 1rem; font-weight: 700; }
+.typeface__info small { font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.2rem; }
 .values-list { display: grid; gap: 0.6rem; }
 .values-list li { display: flex; align-items: center; gap: 0.6rem; font-size: 0.92rem; font-weight: 500; }
 .values-list svg { color: var(--cherry); flex: none; }
