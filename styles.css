@@ -156,6 +156,8 @@ ul { list-style: none; padding: 0; }
 .logo { display: inline-flex; align-items: center; gap: 0.7rem; color: var(--cherry); }
 .logo__mark { width: 30px; height: auto; flex: none; }
 .logo__mark path { stroke: currentColor; }
+.logo__col { display: flex; flex-direction: column; gap: 4px; }
+.logo__full { height: 26px; width: auto; display: block; }
 .logo__type {
   display: flex;
   flex-direction: column;
@@ -874,6 +876,54 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
 .carousel__dot.is-active {
   background: #fff;
   width: 1.5rem;
+}
+
+/* ============================================================
+   IMAGE GALLERY (expandible) / GARAPENA
+   ============================================================ */
+.imgallery {
+  display: flex;
+  gap: 0.6rem;
+  height: 440px;
+  margin-top: 2.8rem;
+}
+.imgallery__item {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.imgallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.imgallery__item:hover { flex: 5 1 0; }
+.imgallery__cap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem 1.4rem 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  background: linear-gradient(to top, rgba(20, 8, 10, 0.82), transparent);
+  opacity: 0;
+  transition: opacity 0.45s var(--ease);
+}
+.imgallery__item:hover .imgallery__cap { opacity: 1; }
+@media (max-width: 767px) {
+  .imgallery { flex-direction: column; height: auto; }
+  .imgallery__item { flex: none; height: 220px; }
+  .imgallery__item:hover { flex: none; }
+  .imgallery__cap { opacity: 1; }
 }
 
 /* ============================================================
