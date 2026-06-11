@@ -331,4 +331,14 @@
       if (e.key === "Escape" && !lb.hidden) closeLb();
     });
   }
+
+  /* ---- Flip cards (Produktua) ---- */
+  var layers = document.querySelectorAll(".layers__grid .layer");
+  layers.forEach(function (card) {
+    function flip() { card.classList.toggle("is-flipped"); }
+    card.addEventListener("click", flip);
+    card.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); flip(); }
+    });
+  });
 })();
