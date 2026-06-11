@@ -170,7 +170,36 @@
       note.style.color = "#6F7A5C";
       note.removeAttribute("data-eu");
       note.removeAttribute("data-es");
+      showToast(
+        lang === "es" ? "¡Tu registro se ha completado!" : "Zure erregistroa osatu da!",
+        lang === "es" ? "Pronto tendrás noticias de BIRA." : "Laster jakingo duzu BIRA-ren berri."
+      );
     });
+  }
+
+  /* ---- Toast notification ---- */
+  function showToast(title, desc) {
+    var wrap = document.getElementById("toastWrap");
+    if (!wrap) return;
+    var t = document.createElement("div");
+    t.className = "toast";
+    t.setAttribute("role", "status");
+    t.innerHTML =
+      '<span class="toast__icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>' +
+      '<div class="toast__body"><div class="toast__title"></div><div class="toast__desc"></div></div>' +
+      '<button class="toast__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>';
+    t.querySelector(".toast__title").textContent = title;
+    t.querySelector(".toast__desc").textContent = desc;
+    wrap.appendChild(t);
+    var closed = false;
+    function close() {
+      if (closed) return;
+      closed = true;
+      t.classList.add("is-out");
+      setTimeout(function () { t.remove(); }, 350);
+    }
+    t.querySelector(".toast__close").addEventListener("click", close);
+    setTimeout(close, 4800);
   }
 
   /* ---- Erronka carousel ---- */
