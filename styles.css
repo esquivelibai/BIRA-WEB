@@ -134,23 +134,44 @@ ul { list-style: none; padding: 0; }
 
 /* ---------- Language switch ---------- */
 .lang {
+  position: relative;
   display: inline-flex;
   align-items: center;
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 3px;
-  background: var(--paper);
+  background: var(--paper-2);
 }
+.lang::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  width: calc(50% - 3px);
+  border-radius: 999px;
+  background: var(--cherry);
+  box-shadow: 0 2px 6px -2px rgba(91, 30, 37, 0.5);
+  transition: transform 0.32s var(--ease);
+  z-index: 0;
+}
+.lang:has(button[data-lang="es"].is-active)::before { transform: translateX(100%); }
 .lang button {
+  position: relative;
+  z-index: 1;
+  flex: 1 0 auto;
+  min-width: 2.5rem;
+  text-align: center;
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
+  background: transparent;
   color: var(--ink-soft);
-  transition: background 0.3s var(--ease), color 0.3s var(--ease);
+  transition: color 0.3s var(--ease);
 }
-.lang button.is-active { background: var(--cherry); color: var(--paper); }
+.lang button.is-active { color: var(--paper); }
 
 /* ---------- Logo (isotipo + wordmark) ---------- */
 .logo { display: inline-flex; align-items: center; gap: 0.7rem; color: var(--cherry); }
@@ -913,7 +934,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
 .gallery6__track {
   display: flex;
   gap: 1.2rem;
-  padding: 2.6rem 0 2.6rem;
+  padding: 1.5rem 0 1.5rem;
 }
 .gallery6__card {
   flex: 0 0 82%;
@@ -939,8 +960,8 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   display: block;
 }
 .gallery6__card:hover .gallery6__media {
-  transform: scale(1.25);
-  box-shadow: 0 30px 50px -22px rgba(46, 46, 46, 0.55);
+  transform: scale(1.125);
+  box-shadow: 0 26px 44px -24px rgba(46, 46, 46, 0.5);
 }
 .gallery6__title {
   font-size: clamp(1.2rem, 2.4vw, 1.55rem);
@@ -1043,6 +1064,14 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   color: var(--cherry);
   text-transform: uppercase;
 }
+.phase__media {
+  margin: -1.8rem -1.5rem 1.4rem;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+.phase__media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s var(--ease); }
+.phase:hover .phase__media img { transform: scale(1.06); }
 .phase__bar { height: 4px; width: 38px; background: var(--cherry); border-radius: 2px; margin: 0.9rem 0 1.1rem; }
 .phase h3 { font-size: 1.12rem; font-weight: 700; }
 .phase p { font-size: 0.9rem; color: var(--ink-soft); margin-top: 0.5rem; }
