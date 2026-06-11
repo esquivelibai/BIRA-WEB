@@ -545,27 +545,50 @@
           </p>
         </div>
 
-        <div class="imgallery reveal" data-delay="1">
-          <a class="imgallery__item" href="#garapena" aria-label="Tokiko uzta">
+        <p class="bento__hint reveal" data-delay="1" data-eu="Arrastatu esploratzeko · egin klik handitzeko" data-es="Arrastra para explorar · clic para ampliar">Arrastatu esploratzeko · egin klik handitzeko</p>
+        <div class="bento reveal" data-delay="1" id="garapenaBento">
+          <figure class="bento__item bento__item--tall" tabindex="0" role="button" data-full="assets/basket.png" aria-label="Tokiko uzta">
             <img src="assets/basket.png" alt="BIRA · tokiko fruta eta barazkien saskian" loading="lazy" />
-            <span class="imgallery__cap" data-eu="Tokiko uzta" data-es="Cosecha local">Tokiko uzta</span>
-          </a>
-          <a class="imgallery__item" href="#garapena" aria-label="Salmenta-puntua">
+            <figcaption class="bento__cap">
+              <h3 data-eu="Tokiko uzta" data-es="Cosecha local">Tokiko uzta</h3>
+              <p data-eu="Tokiko fruta eta barazkiak, BIRArekin batera." data-es="Fruta y verdura local, junto a BIRA.">Tokiko fruta eta barazkiak, BIRArekin batera.</p>
+            </figcaption>
+          </figure>
+          <figure class="bento__item" tabindex="0" role="button" data-full="assets/shelf-store.jpg" aria-label="Salmenta-puntua">
             <img src="assets/shelf-store.jpg" alt="BIRA · denda ekologikoan apalategian" loading="lazy" />
-            <span class="imgallery__cap" data-eu="Salmenta-puntua" data-es="Punto de venta">Salmenta-puntua</span>
-          </a>
-          <a class="imgallery__item" href="#garapena" aria-label="Denda ekologikoan">
+            <figcaption class="bento__cap">
+              <h3 data-eu="Salmenta-puntua" data-es="Punto de venta">Salmenta-puntua</h3>
+              <p data-eu="Apalategian nabarmentzen, denda ekologikoetan." data-es="Destaca en el lineal de tiendas ecológicas.">Apalategian nabarmentzen, denda ekologikoetan.</p>
+            </figcaption>
+          </figure>
+          <figure class="bento__item" tabindex="0" role="button" data-full="assets/store-display.jpg" aria-label="Denda ekologikoan">
             <img src="assets/store-display.jpg" alt="BIRA · denda ekologikoko expositorea" loading="lazy" />
-            <span class="imgallery__cap" data-eu="Denda ekologikoan" data-es="En tienda ecológica">Denda ekologikoan</span>
-          </a>
-          <a class="imgallery__item" href="#garapena" aria-label="Ekoizpena">
+            <figcaption class="bento__cap">
+              <h3 data-eu="Denda ekologikoan" data-es="En tienda ecológica">Denda ekologikoan</h3>
+              <p data-eu="Markaren expositorea salmenta-puntuan." data-es="Expositor de marca en el punto de venta.">Markaren expositorea salmenta-puntuan.</p>
+            </figcaption>
+          </figure>
+          <figure class="bento__item" tabindex="0" role="button" data-full="assets/factory.jpg" aria-label="Ekoizpena">
             <img src="assets/factory.jpg" alt="BIRA · ekoizpena" loading="lazy" />
-            <span class="imgallery__cap" data-eu="Ekoizpena · labean" data-es="Producción · al horno">Ekoizpena · labean</span>
-          </a>
-          <a class="imgallery__item" href="#garapena" aria-label="Dastatzeko prest">
+            <figcaption class="bento__cap">
+              <h3 data-eu="Ekoizpena · labean" data-es="Producción · al horno">Ekoizpena · labean</h3>
+              <p data-eu="Tokiko ekoizpena, labean kontrolatuta." data-es="Producción local, con horneado controlado.">Tokiko ekoizpena, labean kontrolatuta.</p>
+            </figcaption>
+          </figure>
+          <figure class="bento__item" tabindex="0" role="button" data-full="assets/bar-plate.jpg" aria-label="Dastatzeko prest">
             <img src="assets/bar-plate.jpg" alt="BIRA · barrak platerean" loading="lazy" />
-            <span class="imgallery__cap" data-eu="Dastatzeko prest" data-es="Listo para degustar">Dastatzeko prest</span>
-          </a>
+            <figcaption class="bento__cap">
+              <h3 data-eu="Dastatzeko prest" data-es="Listo para degustar">Dastatzeko prest</h3>
+              <p data-eu="Errazio bakarra edozein momentutarako." data-es="Una ración para cualquier momento.">Errazio bakarra edozein momentutarako.</p>
+            </figcaption>
+          </figure>
+          <figure class="bento__item bento__item--tall" tabindex="0" role="button" data-full="assets/caja-24.png" aria-label="24 unitateko kutxa">
+            <img src="assets/caja-24.png" alt="BIRA · 24 unitateko kutxa" loading="lazy" />
+            <figcaption class="bento__cap">
+              <h3 data-eu="24 unitateko kutxa" data-es="Caja de 24">24 unitateko kutxa</h3>
+              <p data-eu="24 x (40 g) formatua, salmenta-punturako." data-es="Formato 24 x (40 g), para punto de venta.">24 x (40 g) formatua, salmenta-punturako.</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -624,7 +647,7 @@
     <section class="section quote">
       <svg class="quote__mark" viewBox="0 0 100 120" aria-hidden="true"><use href="#bira-mark" /></svg>
       <div class="container">
-        <p class="quote__text reveal" data-eu="Ez da helmuga.&#10;Bidea da." data-es="No es la meta.&#10;Es el camino.">Ez da helmuga. Bidea da.</p>
+        <p class="quote__text reveal" data-eu="Ez da helmuga,&#10;bidea baizik." data-es="No es la meta,&#10;sino el camino.">Ez da helmuga, bidea baizik.</p>
         <p class="quote__cap reveal" data-delay="1">Real energy belongs to the journey</p>
       </div>
     </section>
@@ -726,6 +749,11 @@
       </div>
     </div>
   </footer>
+
+  <div class="lightbox" id="bentoLightbox" hidden>
+    <button class="lightbox__close" type="button" aria-label="Itxi / Cerrar">&times;</button>
+    <img class="lightbox__img" src="" alt="" />
+  </div>
 
   <script src="script.js"></script>
 </body>

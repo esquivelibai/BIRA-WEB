@@ -247,4 +247,59 @@
     window.addEventListener("resize", gUpdate);
     gUpdate();
   }
+
+  /* ---- Bento gallery + lightbox ---- */
+  var bento = document.getElementById("garapenaBento");
+  var lb = document.getElementById("bentoLightbox");
+  if (bento && lb) {
+    var lbImg = lb.querySelector(".lightbox__img");
+    var lbClose = lb.querySelector(".lightbox__close");
+
+    function openLb(src, alt) {
+      lbImg.src = src;
+      lbImg.alt = alt || "";
+      lb.hidden = false;
+      document.body.style.overflow = "hidden";
+    }
+    function closeLb() {
+      lb.hidden = true;
+      lbImg.removeAttribute("src");
+      document.body.style.overflow = "";
+    }
+
+    var down = false, dragged = false, startX = 0, startScroll = 0;
+    bento.addEventListener("pointerdown", function (e) {
+      down = true; dragged = false; startX = e.clientX; startScroll = bento.scrollLeft;
+      bento.classList.add("is-grabbing");
+    });
+    bento.addEventListener("pointermove", function (e) {
+      if (!down) return;
+      if (Math.abs(e.clientX - startX) > 6) dragged = true;
+      bento.scrollLeft = startScroll - (e.clientX - startX);
+    });
+    window.addEventListener("pointerup", function () {
+      down = false; bento.classList.remove("is-grabbing");
+    });
+
+    bento.querySelectorAll(".bento__item").forEach(function (item) {
+      item.addEventListener("click", function () {
+        if (dragged) return;
+        var img = item.querySelector("img");
+        openLb(item.getAttribute("data-full"), img ? img.alt : "");
+      });
+      item.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          var img = item.querySelector("img");
+          openLb(item.getAttribute("data-full"), img ? img.alt : "");
+        }
+      });
+    });
+
+    lbClose.addEventListener("click", closeLb);
+    lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !lb.hidden) closeLb();
+    });
+  }
 })();
