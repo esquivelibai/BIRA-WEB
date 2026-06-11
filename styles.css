@@ -515,25 +515,20 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   border-radius: var(--radius);
   background: var(--cream);
 }
-.layer__inner {
+.layer__inner { position: absolute; inset: 0; }
+.layer__face {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  display: flex;
+  inset: 0;
+  overflow: hidden;
   transition: transform 1s cubic-bezier(0.5, 0, 0.2, 1);
   will-change: transform;
 }
-/* desliza a la izquierda: el frente sale y la foto entra desde la derecha */
-.layer.is-flipped .layer__inner { transform: translateX(-50%); }
-.layer__face {
-  position: relative;
-  flex: 0 0 50%;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-}
+/* el frente está a la vista; la foto espera fuera, a la derecha */
+.layer__front { transform: translateX(0); z-index: 2; }
+.layer__back { transform: translateX(100%); }
+/* al activar: el frente sale por la izquierda y la foto entra desde la derecha */
+.layer.is-flipped .layer__front { transform: translateX(-100%); }
+.layer.is-flipped .layer__back { transform: translateX(0); }
 .layer__front {
   background: var(--cream);
   border: 1px solid var(--line-soft);
