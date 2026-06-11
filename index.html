@@ -188,8 +188,7 @@
               </figure>
 
               <figure class="carousel__slide carousel__slide--logo">
-                <img src="assets/ereindajan-logo.png" alt="EREINDAJAN · Debagoieneko egitasmo agroekologikoa" loading="lazy"
-                     onerror="this.onerror=null;this.src='assets/poster.jpg'" />
+                <img src="assets/ereindajan-logo.png" alt="EREINDAJAN · Debagoieneko egitasmo agroekologikoa" loading="lazy" />
                 <figcaption class="carousel__cap carousel__cap--light">
                   <span class="carousel__step">05</span>
                   <span data-eu="Erronka honen sortzailea: EREINDAJAN, Debagoieneko egitasmo agroekologikoa."
@@ -470,28 +469,61 @@
           </p>
         </div>
 
-        <div class="gallery">
-          <figure class="g-big reveal">
-            <img src="assets/shelf.jpg" alt="BIRA · apalategian" loading="lazy" />
-            <figcaption data-eu="Salmenta-puntua" data-es="Punto de venta">Salmenta-puntua</figcaption>
-          </figure>
-          <figure class="g-wide reveal" data-delay="1">
-            <img src="assets/factory.jpg" alt="BIRA · ekoizpena" loading="lazy" />
-            <figcaption data-eu="Ekoizpena · labean" data-es="Producción · al horno">Ekoizpena · labean</figcaption>
-          </figure>
-          <figure class="g-tall reveal" data-delay="1">
-            <img src="assets/bar-back.jpg" alt="BIRA · atzeko aldea" loading="lazy" />
-            <figcaption data-eu="Etiketa · atzealdea" data-es="Etiqueta · trasera">Etiketa · atzealdea</figcaption>
-          </figure>
-          <figure class="reveal" data-delay="2">
-            <img src="assets/box.jpg" alt="BIRA · 24 unitateko kutxa" loading="lazy" />
-            <figcaption data-eu="24 unitateko kutxa" data-es="Caja de 24">24 unitateko kutxa</figcaption>
-          </figure>
-          <figure class="g-wide reveal" data-delay="3">
-            <img src="assets/retail.jpg" alt="BIRA · denda ekologikoan" loading="lazy"
-                 onerror="this.closest('figure').remove()" />
-            <figcaption data-eu="Denda ekologikoan" data-es="En tienda ecológica">Denda ekologikoan</figcaption>
-          </figure>
+        <div class="gallery6 reveal" data-delay="1" id="garapenaGallery">
+          <div class="gallery6__nav">
+            <button class="gallery6__btn gallery6__btn--prev" type="button" aria-label="Aurrekoa / Anterior">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <button class="gallery6__btn gallery6__btn--next" type="button" aria-label="Hurrengoa / Siguiente">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <div class="gallery6__viewport">
+            <div class="gallery6__track">
+
+              <article class="gallery6__card">
+                <div class="gallery6__media">
+                  <img src="assets/shelf.jpg" alt="BIRA · apalategian" loading="lazy" />
+                </div>
+                <h3 class="gallery6__title" data-eu="Salmenta-puntua" data-es="Punto de venta">Salmenta-puntua</h3>
+                <p class="gallery6__summary"
+                   data-eu="Apalategian nabarmentzeko diseinatutako ontzia, kolore eta mezu garbiekin."
+                   data-es="Envase diseñado para destacar en el lineal, con color y mensaje claros.">Apalategian nabarmentzeko diseinatutako ontzia, kolore eta mezu garbiekin.</p>
+              </article>
+
+              <article class="gallery6__card">
+                <div class="gallery6__media">
+                  <img src="assets/factory.jpg" alt="BIRA · ekoizpena" loading="lazy" />
+                </div>
+                <h3 class="gallery6__title" data-eu="Ekoizpena · labean" data-es="Producción · al horno">Ekoizpena · labean</h3>
+                <p class="gallery6__summary"
+                   data-eu="Tokiko ekoizpena, labean egostea kontrolatuta testura eta zaporea zaintzeko."
+                   data-es="Producción local, con horneado controlado para cuidar textura y sabor.">Tokiko ekoizpena, labean egostea kontrolatuta testura eta zaporea zaintzeko.</p>
+              </article>
+
+              <article class="gallery6__card">
+                <div class="gallery6__media">
+                  <img src="assets/bar-back.jpg" alt="BIRA · atzeko aldea" loading="lazy" />
+                </div>
+                <h3 class="gallery6__title" data-eu="Etiketa · atzealdea" data-es="Etiqueta · trasera">Etiketa · atzealdea</h3>
+                <p class="gallery6__summary"
+                   data-eu="Osagai garbiak eta informazio gardena: zer dagoen barruan, argi eta garbi."
+                   data-es="Ingredientes limpios e información transparente: lo que hay dentro, claro.">Osagai garbiak eta informazio gardena: zer dagoen barruan, argi eta garbi.</p>
+              </article>
+
+              <article class="gallery6__card">
+                <div class="gallery6__media">
+                  <img src="assets/box.jpg" alt="BIRA · 24 unitateko kutxa" loading="lazy" />
+                </div>
+                <h3 class="gallery6__title" data-eu="24 unitateko kutxa" data-es="Caja de 24">24 unitateko kutxa</h3>
+                <p class="gallery6__summary"
+                   data-eu="6 eta 24 unitateko formatuak, etxerako zein salmenta-puntuetarako."
+                   data-es="Formatos de 6 y 24 unidades, para casa y para punto de venta.">6 eta 24 unitateko formatuak, etxerako zein salmenta-puntuetarako.</p>
+              </article>
+
+            </div>
+          </div>
         </div>
       </div>
     </section>

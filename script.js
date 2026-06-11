@@ -220,4 +220,31 @@
     goTo(0);
     start();
   }
+
+  /* ---- Garapena gallery (gallery6) ---- */
+  var gallery = document.getElementById("garapenaGallery");
+  if (gallery) {
+    var vp = gallery.querySelector(".gallery6__viewport");
+    var gPrev = gallery.querySelector(".gallery6__btn--prev");
+    var gNext = gallery.querySelector(".gallery6__btn--next");
+
+    function gStep() {
+      var card = gallery.querySelector(".gallery6__card");
+      return card ? card.offsetWidth + 19 : vp.clientWidth * 0.8;
+    }
+    function gUpdate() {
+      var max = vp.scrollWidth - vp.clientWidth;
+      gPrev.disabled = vp.scrollLeft <= 2;
+      gNext.disabled = vp.scrollLeft >= max - 2;
+    }
+    gNext.addEventListener("click", function () {
+      vp.scrollBy({ left: gStep(), behavior: "smooth" });
+    });
+    gPrev.addEventListener("click", function () {
+      vp.scrollBy({ left: -gStep(), behavior: "smooth" });
+    });
+    vp.addEventListener("scroll", gUpdate, { passive: true });
+    window.addEventListener("resize", gUpdate);
+    gUpdate();
+  }
 })();
