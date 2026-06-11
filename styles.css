@@ -550,11 +550,11 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   transition: transform 0.25s var(--ease), background 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
 }
 .chip:hover {
-  background: var(--ink);
+  background: var(--cherry);
   color: var(--paper);
-  border-color: var(--ink);
+  border-color: var(--cherry);
   transform: scale(1.14);
-  box-shadow: 0 12px 24px -12px rgba(46, 46, 46, 0.45);
+  box-shadow: 0 12px 24px -12px rgba(91, 30, 37, 0.5);
 }
 
 /* ============================================================
@@ -913,7 +913,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
 .gallery6__track {
   display: flex;
   gap: 1.2rem;
-  padding-bottom: 0.4rem;
+  padding: 0.8rem 0 1.1rem;
 }
 .gallery6__card {
   flex: 0 0 82%;
@@ -925,6 +925,8 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   overflow: hidden;
   border-radius: 0.85rem;
   background: var(--paper-2);
+  transform-origin: center;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
 .gallery6__media img {
   width: 100%;
@@ -932,9 +934,11 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   object-fit: cover;
   object-position: center;
   display: block;
-  transition: transform 0.4s var(--ease);
 }
-.gallery6__card:hover .gallery6__media img { transform: scale(1.05); }
+.gallery6__card:hover .gallery6__media {
+  transform: scale(1.06);
+  box-shadow: 0 26px 44px -24px rgba(46, 46, 46, 0.5);
+}
 .gallery6__title {
   font-size: clamp(1.2rem, 2.4vw, 1.55rem);
   font-weight: 600;
