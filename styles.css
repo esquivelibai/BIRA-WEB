@@ -760,6 +760,8 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
   align-items: center;
 }
 .split--rev .split__media { order: 2; }
+.split--posmap { grid-template-columns: 1fr 1.7fr; align-items: center; }
+.split--posmap .split__media { box-shadow: 0 30px 60px -36px rgba(60, 20, 25, 0.4); border-radius: var(--radius-lg); overflow: hidden; }
 .split__media {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -930,13 +932,13 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
 
 /* ---------- Persona (Irati) ---------- */
 .persona__photo {
-  aspect-ratio: 520 / 844;
-  background: url("assets/personas.jpg") left center / auto 100% no-repeat;
-  background-color: var(--paper-2);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 30px 60px -36px rgba(60, 20, 25, 0.45);
+  margin: 0;
   align-self: start;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 30px 60px -36px rgba(60, 20, 25, 0.45);
 }
+.persona__photo img { width: 100%; height: auto; display: block; }
 .persona-acc { margin-top: 1.8rem; }
 .acc { border-top: 1px solid var(--line); }
 .acc:last-child { border-bottom: 1px solid var(--line); }
